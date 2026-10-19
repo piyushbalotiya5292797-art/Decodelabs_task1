@@ -1,64 +1,83 @@
-# Project 1 – Data Cleaning & Preparation
+# DecodeLabs Internship — Task 1: Data Cleaning & Preparation
 
-## Description
+## About the Project
 
-This project focuses on cleaning and preparing a raw dataset using Python. The dataset is processed to identify and handle missing values, remove duplicate records, and correct incorrect or inconsistent data formats.
+This project is part of my Data Analytics internship at DecodeLabs. The main goal of this task is to clean and prepare a dataset so that it can be used for further analysis.
 
-The cleaned dataset is prepared for further analysis and visualization.
+I used Python and Pandas to check the dataset, verify data formats, and make sure the data was ready for use without making unnecessary changes to the original information.
 
-## Key Tasks
+## Objectives
 
-* Identify missing or null values.
-* Handle missing values appropriately.
-* Remove duplicate records.
-* Correct date formats.
-* Correct numerical data formats.
-* Clean and standardize text values.
-* Generate a clean and analysis-ready dataset.
+- Identify missing or null values in the dataset.
+- Check for duplicate records.
+- Verify and standardize date formats.
+- Check numeric and text columns for formatting issues.
+- Validate the dataset after cleaning.
 
-## Technologies Used
+## Tools and Technologies
 
-* Python
-* Pandas
-* VS Code
+- **Python** — for data cleaning and processing.
+- **Pandas** — for handling and analyzing tabular data.
+- **Excel** — for working with the original and cleaned datasets.
+- **GitHub** — for storing and managing the project files.
 
-## How to Run
+## Dataset Overview
 
-### 1. Install Python
+The dataset contains 1,200 rows and 14 columns related to order information, including order IDs, dates, customer IDs, products, quantities, prices, payment methods, order statuses, and coupon codes.
 
-Make sure Python is installed on your system.
+## Data Cleaning Process
 
-### 2. Install Required Libraries
+The following checks were performed:
 
-Open the project folder in the terminal and run:
+1. **Missing Values:** Identified missing values in the dataset. Missing coupon codes were preserved rather than filled with guessed values.
+2. **Duplicate Records:** Checked the `OrderID` column for duplicate IDs.
+3. **Date Formatting:** Verified the dates and standardized their display to `YYYY-MM-DD`.
+4. **Numeric Data:** Checked columns such as quantity, unit price, total price, and items in cart.
+5. **Text Formatting:** Checked text fields for unnecessary leading or trailing spaces.
+6. **Validation:** Checked the dataset after processing to confirm that the required conditions were met.
 
-### 3. Run the Project
+## Results
 
-If your Python file is named `data_cleaning.py`, run:
+- Total records retained: 1,200
+- Total columns retained: 14
+- Duplicate OrderIDs: 0
+- Invalid or missing dates: 0
+- Missing coupon codes: 309, preserved as missing values
+- Original dataset: Kept unchanged
 
+## Project Files
 
-## Project Workflow
+- `Dataset_for_Data_Analytics.xlsx` — Original dataset.
+- `DecodeLabs_Project1_Cleaned_Dataset.xlsx` — Cleaned dataset in Excel format.
+- `DecodeLabs_Project1_Cleaned_Dataset.csv` — Cleaned dataset in CSV format.
+- `DecodeLabs_Project1_Cleaning.py` — Python script used for the cleaning process.
+- `DecodeLabs_Project1_Cleaning_Summary.txt` — Summary of the cleaning checks and results.
+- `DecodeLabs_Project1_Report.docx` — Project report.
 
-1. Load the raw dataset using Pandas.
-2. Inspect the dataset and identify missing values.
-3. Handle missing or null values.
-4. Identify and remove duplicate records.
-5. Correct incorrect data types and formats.
-6. Clean and standardize text and numerical values.
-7. Export the cleaned dataset.
+## How to Run the Project
 
-## Project Goal
+1. Install Python on your computer.
+2. Install the required libraries:
 
-The goal of this project is to transform a raw dataset into a clean, consistent, and analysis-ready dataset using Python and Pandas.
+   ```bash
+   py -m pip install pandas openpyxl
+   ```
 
-## Key Skills
+3. Keep the Python script and original Excel dataset in the same folder.
+4. Open Command Prompt or a terminal in that folder.
+5. Run the script:
 
-* Data Cleaning
-* Data Preparation
-* Python
-* Pandas
-* Handling Missing Values
-* Removing Duplicates
-* Data Type Conversion
-* Dataset Validation
+   ```bash
+   py DecodeLabs_Project1_Cleaning.py
+   ```
 
+6. Check the generated cleaned dataset and cleaning summary.
+
+## Conclusion
+
+This task helped me understand the importance of data cleaning and preparation before performing data analysis. It also gave me practical experience using Python and Pandas to validate a dataset while preserving the original information.
+
+---
+
+**Internship:** DecodeLabs — Data Analytics  
+**Project:** Task 1 — Data Cleaning & Preparation
