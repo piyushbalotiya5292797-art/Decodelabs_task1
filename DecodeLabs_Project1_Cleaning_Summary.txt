@@ -1,0 +1,69 @@
+DECODELABS PROJECT 1 — CLEANING SUMMARY
+Source: Dataset_for_Data_Analytics.xlsx (dataset provided for the task)
+
+Rows in source: 1200
+Columns in source: 14
+Rows in output: 1200
+Duplicate OrderID rows removed: 0
+Duplicate OrderIDs remaining: 0
+Invalid/missing dates remaining: 0
+
+Missing/null values in source:
+OrderID              0
+Date                 0
+CustomerID           0
+Product              0
+Quantity             0
+UnitPrice            0
+ShippingAddress      0
+PaymentMethod        0
+OrderStatus          0
+TrackingNumber       0
+ItemsInCart          0
+CouponCode         309
+ReferralSource       0
+TotalPrice           0
+
+Missing/null values in output:
+OrderID              0
+Date                 0
+CustomerID           0
+Product              0
+Quantity             0
+UnitPrice            0
+ShippingAddress      0
+PaymentMethod        0
+OrderStatus          0
+TrackingNumber       0
+ItemsInCart          0
+CouponCode         309
+ReferralSource       0
+TotalPrice           0
+
+Numeric columns checked:
+- Quantity: int64; values failing numeric check: 0
+- UnitPrice: float64; values failing numeric check: 0
+- ItemsInCart: int64; values failing numeric check: 0
+- TotalPrice: float64; values failing numeric check: 0
+
+Text fields checked for leading/trailing spaces:
+- OrderID: 0 issue(s)
+- CustomerID: 0 issue(s)
+- Product: 0 issue(s)
+- ShippingAddress: 0 issue(s)
+- PaymentMethod: 0 issue(s)
+- OrderStatus: 0 issue(s)
+- TrackingNumber: 0 issue(s)
+- CouponCode: 0 issue(s)
+- ReferralSource: 0 issue(s)
+
+Actions taken:
+- Checked missing/null values and reported them; no values were invented or filled.
+- Checked OrderID duplicates; later occurrences would be removed only if duplicates existed.
+- Checked dates and standardized their output display/export format to YYYY-MM-DD.
+- Checked numeric columns without changing valid numeric values.
+- Checked text fields; did not rewrite text content.
+- Preserved all columns and valid source values.
+
+Important:
+Missing CouponCode values remain missing because the source does not specify their correct values.
